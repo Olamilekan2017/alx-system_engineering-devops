@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This shell script loops 20 times and display number 1 to 20
+# Displays "bad luck from china" for the 4th iteration
+# Displays "bad lick from japan" for the 9th iteration
+# Displays "bad luck from italy" for the 17th iteration
+
+total=1
+
+while [ $total -lt 21 ]
+do
+	echo "$total"
+	case $total in
+		"4") echo "bad luck from china";;
+		"9") echo "bad luck from japan";;
+		"17") echo "bad luck from italy";;
+	esac
+	(( total++ ))
+done
