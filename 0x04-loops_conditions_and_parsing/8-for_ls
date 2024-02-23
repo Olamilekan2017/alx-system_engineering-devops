@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This shell script displays the content of current dir
+# in a list format
+
+list=$(ls)
+for l in $list; do
+	echo "$l" | cut -d '-' -f2
+done
