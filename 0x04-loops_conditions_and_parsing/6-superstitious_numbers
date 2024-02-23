@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This shell script loops 20 times and display number 1 to 20
+# This shell script loops 20 times and display num 1-20
 # Displays "bad luck from china" for the 4th iteration
 # Displays "bad lick from japan" for the 9th iteration
 # Displays "bad luck from italy" for the 17th iteration
