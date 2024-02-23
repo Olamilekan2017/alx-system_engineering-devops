@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This shell script loops 10 times
+# Displays "Bad luck" for the 4th iteration
+# Dosplays "Good luck" for the 5th iteration
+# Displays "Best School" for other iteration
+
+total=1
+
+while [ $total -lt 11 ]
+do
+	if [ $total -eq 4 ]
+	then
+		echo "bad luck"
+	elif [ $total -eq 8 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	(( total++ ))
+done
