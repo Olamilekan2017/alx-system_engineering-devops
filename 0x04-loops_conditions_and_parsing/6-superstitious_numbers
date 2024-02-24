@@ -10,9 +10,9 @@ while [ $total -le 20 ]
 do
 	echo "$total"
 	case $total in
-		"4") echo "bad luck from china";;
-		"9") echo "bad luck from japan";;
-		"17") echo "bad luck from italy";;
+		"4") echo "bad luck from China";;
+		"9") echo "bad luck from Japan";;
+		"17") echo "bad luck from Italy";;
 	esac
 	(( total++ ))
 done
