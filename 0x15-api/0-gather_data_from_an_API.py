@@ -16,11 +16,11 @@ if __name__ == "__main__":
             empty_resp = get(f"{API_URL}/users/{empty_id}").json()
             tsk_rep = get(f"{API_URL}/todos").json()
             empty_name = empty_resp.get("name")
-            tasks = list(filter(lambda k: k.get("userId") == empty_id, tsk_rep))
-            comp_tasks = list(filter(lambda k: k.get("completed"), tasks))
+            task = list(filter(lambda k: k.get("userId") == empty_id, tsk_rep))
+            comp_tasks = list(filter(lambda k: k.get("completed"), task))
             print(
                     f"Employee {empty_name} is done with "
-                    f"tasks({len(comp_tasks)}/{len(tasks)}):"
+                    f"task({len(comp_tasks)}/{len(task)}):"
             )
             for comp_task in comp_tasks:
                 print(f"\t {comp_task.get('title')}")
